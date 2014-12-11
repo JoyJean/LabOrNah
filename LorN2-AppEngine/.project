@@ -3,6 +3,7 @@
 	<name>LorN2-AppEngine</name>
 	<comment></comment>
 	<projects>
+		<project>LorN2</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

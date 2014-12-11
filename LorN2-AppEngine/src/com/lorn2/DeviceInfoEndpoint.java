@@ -7,8 +7,7 @@ import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
 import com.google.api.server.spi.response.CollectionResponse;
 import com.google.appengine.api.datastore.Cursor;
-import com.google.appengine.datanucleus.query.JPACursorHelper;
-
+import com.google.appengine.*;
 import java.util.List;
 
 import javax.annotation.Nullable;
@@ -17,6 +16,9 @@ import javax.persistence.EntityExistsException;
 import javax.persistence.EntityNotFoundException;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+
+import com.google.appengine.datanucleus.*;
+import com.google.appengine.datanucleus.query.JPACursorHelper;
 
 @Api(name = "deviceinfoendpoint", namespace = @ApiNamespace(ownerDomain = "lorn2.com", ownerName = "lorn2.com", packagePath = ""))
 public class DeviceInfoEndpoint {
